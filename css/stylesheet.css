@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'SVN-The Voice';
+    src: url('SVN-TheVoice.eot');
+    src: url('SVN-TheVoice.eot?#iefix') format('embedded-opentype'),
+        url('SVN-TheVoice.woff2') format('woff2'),
+        url('SVN-TheVoice.woff') format('woff'),
+        url('SVN-TheVoice.ttf') format('truetype'),
+        url('SVN-TheVoice.svg#SVN-TheVoice') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-SAF';
+    src: url('SVN-SAF.eot');
+    src: url('SVN-SAF.eot?#iefix') format('embedded-opentype'),
+        url('SVN-SAF.woff2') format('woff2'),
+        url('SVN-SAF.woff') format('woff'),
+        url('SVN-SAF.ttf') format('truetype'),
+        url('SVN-SAF.svg#SVN-SAF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

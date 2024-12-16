@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+*{scroll-behavior: smooth}
+body
+{
+	
+	color: rgba(0,0,0,0.8);
+	font-size: 16px;
+	font-family:"Nunito", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p{color: #fff;}
+img{
+	width: 90px;
+	height: 55px;
+	margin-left: 100px;}
+h2{
+	color: #fff;
+	font-size: 50px;
+}
+h4{
+	font-size: 20px;
+	
+}
+.dichvu a{
+	color: rgba(209,65,68,1.00);
+}
+/*p{
+	color: #fff;
+}*/
+.dichvu{
+	font-size: 20px;
+	
+}
+.bg-primary
+{
+	background-color: rgba(41,40,40,1.00);
+}
+.text-dark
+{
+	color:rgba(41,41,41,1.00);
+}
+
+.hid{
+	color: black;
+	font-size: 15px;
+}
+.si-ser{
+	background: rgba(210,207,207,1.00);
+	padding: 60px;
+	height: 400px;
+	transition: .6s ease;
+}
+
+.si-ser:hover{
+	color: rgba(209,65,68,1.00);
+}
+
+/*.si-ser i{
+	color: rgba(209,65,68,1.00);
+}
+.si-ser i:hover{
+	transition: .6s ease;
+	color: #fff;
+}
+
+.hid:hover{
+	transition: .6s ease;
+	color: #fff;
+}*/
+
+/*--------------dinh dang vung section-----------------------------*/
+
+*{ box-sizing: border-box} /* giữ đường vien vao trong*/
+.container
+{/* box container sẽ chiếm 90% độ rộng màn hình và nằm giữa*/
+	width: 90%; margin: auto 
+}
+@media (min-width:600px)
+{
+	.container{width: 80%; margin: auto }
+}
+.col-1 { width: 8.33%; }
+.col-2{width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+/* phải cho các cột vào dòng row, thì mới dược sắp nằm cạnh nhau cho đủ 100%*/
+.row{ display: flex; flex-wrap: wrap}
+/*tất cả các cột đều có đường viền đỏ và đẩy bờ lề vào trong là 15px*/
+[class*="col-"] {
+  padding: 15px;
+ /* border: 1px solid red;*/
+}
+.img-100{ width: 85%; height: auto}
+.text-center{ text-align: center}
+@media (min-width:600px)
+{
+	.col-md-1 { width: 8.33%; }
+	.col-md-2{width: 16.66%}
+	.col-md-3{ width: 25%}
+	.col-md-4{ width: 33.33%}
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8{ width: 66.66%}
+	.col-md-9{ width: 75%}
+	.col-md-10{ width: 83.33%}
+	.col-md-11{ width: 91.66%}
+	.col-md-12{ width: 100%}
+}
+@media (min-width:960px)
+{
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2{width: 16.66%}
+	.col-lg-3{ width: 25%}
+	.col-lg-4{ width: 33.33%}
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8{ width: 66.66%}
+	.col-lg-9{ width: 75%}
+	.col-lg-10{ width: 83.33%}
+	.col-lg-11{ width: 91.66%}
+	.col-lg-12{ width: 100%}
+}
+
+/*--- dinh dang trong flex---*/
+.d-flex{ display: flex}
+/*--- dẩy các box trong flexc theo chiều ngang*/
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content:flex-end}
+.justify-content-center{justify-content:center}
+.justify-content-between{justify-content:space-between}
+.justify-content-around{justify-content:space-around}
+/*--- đẩy các cột trong flex theo chiều dọc*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}
+
+.mx-auto{ margin-left: auto; margin-right: auto}
+.mt-40{ margin-top: 40px}
+.py-40{padding-top: 100px; padding-bottom: 40px; }
+.p-100{ padding: 100px}
+.mt-5{ margin-top: 10px; padding-bottom: 5px;}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+/*stye cho menu responsive*/
+
+header /*cố */
+{
+	position: fixed;
+	width: 100%;
+	left: 0; top: 0;
+	z-index: 99999
+	
+}
+	header nav
+{
+	background: #fff;
+	padding: 10px 0;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+	position: relative;
+}
+nav .container{ 
+	position: relative;
+	padding-bottom: 3px;
+}
+/*nav .btn-toggle
+{
+	position: absolute;
+	right: 0;
+	font-size: 20px;
+	color: #666;
+	cursor: pointer
+}*/
+/*nav .brand{
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 600;
+	
+}*/
+/*nav .menu{
+	border: 1px solid red;
+}*/
+nav .menu ul
+{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	margin-right: 30px;
+}
+nav .menu li a:hover{
+	transition: .6s ease;
+	color: mediumvioletred;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+
+}
+nav .menu ul li{
+	position: relative}
+nav .menu ul li a
+{
+	font-size: 16px;
+	margin-left: 25px;
+	text-decoration: none;
+	padding:10px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	color:#666;
+}
+nav .menu ul li a:hover
+{
+	background-color: #E38C8C
+}
+.menu{ display: none}
+@media(min-width: 900px)
+{
+	.menu{ display: block !important}
+	nav .btn-toggle{ display: none}
+	nav .container,
+	nav .menu ul
+	{	display: flex;
+	 	justify-content: space-between;	
+		align-items: center;
+	}
+	nav .menu ul li a
+	{
+		border-bottom: none;
+		padding: 7px 20px
+	}
+}
+
+#lien-he i{
+	color: #fff;
+}
